@@ -1,0 +1,44 @@
+import java.util.Scanner;
+
+/**
+ *
+ * @author ianse
+ */
+public class WindowsLogIn {
+
+    /**
+     * @param args the command line arguments
+     */
+    static String Username;
+    static int password;
+    public static void passwordAlert(){
+        System.out.println("Now you need to create your password in order to keep your PC from being accessed by strangers!");
+    }
+    
+  
+    
+   
+    
+    
+   
+    public static void main(String[] args) {
+        // TODO code application logic here
+        Scanner input = new Scanner(System.in);
+        System.out.println("Welcome \nPlease Enter your new Username!");
+        Username = input.nextLine();
+        System.out.println("This will be your new Username: " + Username);
+        passwordAlert();
+        String blank = input.nextLine();
+        System.out.println("");
+        System.out.println("Please enter you new password!");
+        int password = input.nextInt();
+        System.out.println("This will be your new password " + password);
+        String blank1 = input.nextLine();
+        System.out.println("You have successfully created you login!");
+       
+        
+        }
+    
+    
+    }
+    
